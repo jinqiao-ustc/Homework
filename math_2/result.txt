@@ -1,0 +1,7 @@
+start test myfunc:
+result: 0.8864682476454504
+time: 37.141571044921875
+
+start test stfunc:
+result: 0.8864682476559799
+time: 40.58479118347168

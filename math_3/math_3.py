@@ -2,6 +2,7 @@ import math
 import euler
 import quaternion as quater
 
+#四元数转为欧拉角
 def QuaternionToEuler(q:quater.Quaternion) :
     s = q.s/q.mod()
     x = q.x/q.mod()
@@ -15,6 +16,7 @@ def QuaternionToEuler(q:quater.Quaternion) :
 
     return e
 
+#欧拉角转为四元数
 def EulerToQuaternion(e:euler.Euler) :
     def cos(x) :
         return math.cos(x)
@@ -32,5 +34,5 @@ def EulerToQuaternion(e:euler.Euler) :
 e = QuaternionToEuler(quater.Quaternion(67, 2, 3, 4))
 q = EulerToQuaternion(euler.Euler(math.pi/2, math.pi/3, math.pi/4))
 
-print(e)
-print(q)
+print('e:\n', e)
+print('q:\n', q)

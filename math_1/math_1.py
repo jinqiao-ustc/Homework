@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 #########################################################################
@@ -7,16 +6,20 @@
 
 import math
 
+#求y
 def solve(y) :
+    #x等于根号下y+1的绝对值
     x = math.sqrt(abs(y+1))
     x_1 = x
     x_2 = -x
     return x_1, x_2
 
 def output(y, x_1, x_2) :
+    #y+1为正，x为实数
     if y >= -1 :
         print("x_1 = %.3f" %x_1)
         print("x_2 = %.3f" %x_2)
+    #y+1为负，x为虚数
     else :
         print("x_1 = %.3f*i" %x_1)
         print("x_2 = %.3f*i" %x_2)
