@@ -1,0 +1,139 @@
+/Users/jin/PycharmProjects/Homework/spider/venv/bin/python /Users/jin/PycharmProjects/Homework/spider/main.py
+搜索类型：作者，标题，诗句，句首，句尾，古籍，成语
+输入搜索类型：作者
+输入搜索关键词：李白
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_2.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_3.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_4.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_5.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_6.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_7.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_8.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_9.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_10.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_11.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_12.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_13.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_14.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_15.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_16.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_17.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_18.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_19.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_20.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_21.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_22.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_23.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_24.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_25.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_26.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_27.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_28.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_29.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_30.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_31.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_32.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_33.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_34.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_35.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_36.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_37.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_38.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_39.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_40.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_41.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_42.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_43.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_44.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_45.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_46.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_47.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_48.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_49.html
+
+正在爬取 https://www.shicimingju.com/chaxun/zuozhe/1_50.html
+
+
+李白
+李白（701年－762年），字太白，号青莲居士，又号“谪仙人”，是唐代伟大的浪漫主义诗人，被后人誉为“诗仙”，与杜甫并称为“李杜”，为了与另两位诗人李商隐与杜牧即“小李杜”区别，杜甫与李白又合称“大李杜”。其人爽朗大方，爱饮酒作诗，喜交友。李白深受黄老列庄思想影响，有《李太白集》传世，诗作中多以醉时写的，代表作有《望庐山瀑布》、《行路难》、《蜀道难》、《将进酒》、《梁甫吟》、《早发白帝城》等多首。李白所作词赋，宋人已有传记（如文莹《湘山野录》卷上），就其开创意义及艺术成就而言，“李白词”享有极为崇高的地位。
+年代：唐
+收录作品：982首
+
+点击保存数据以查看
+
+数据已保存至 datas/作者/李白/contents.txt
+
+
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/sp/vyk5_t495_7bn65n0cg6wwnm0000gn/T/jieba.cache
+Loading model cost 1.066 seconds.
+Prefix dict has been built successfully.
+出现频率最高的10个词为：
+月：224次
+欲：92次
+送：81次
+赠：79次
+日：77次
+笑：75次
+时：74次
+道：72次
+见：71次
+中：71次
+
+正在生成词云图...
+
+词云图已保存至 datas/作者/李白/词云.png
+
+
+
+Process finished with exit code 0
+
