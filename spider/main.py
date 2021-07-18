@@ -12,7 +12,7 @@ class Spider():
         self.dirs = ''
         self.fpath = ''
 
-    # 搜索
+    #搜索
     def search_keys(self):
         self.datas = ''
         print('搜索类型：作者，标题，诗句，句首，句尾，古籍，成语')
@@ -55,7 +55,7 @@ class Spider():
         else:
             print(self.datas + '\n')
 
-    # 保存数据
+    #保存数据
     def save_data(self):
         self.dirs = os.path.join('datas', self.choice, self.keys)
         if os.path.isdir(self.dirs) == False:
@@ -67,7 +67,7 @@ class Spider():
 
         print("数据已保存至 " + self.fpath + '\n\n')
 
-    # 生成词云图
+    #生成词云图
     def generate_word_cloud(self):
         title_dict = change_title_to_dict(self.fpath)
         title_dict_sorted = sorted(title_dict.items(), key=lambda x: x[1], reverse=True)  # 将字典按照value值从小到大排序，再逆序

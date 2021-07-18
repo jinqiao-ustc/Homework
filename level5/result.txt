@@ -1,0 +1,40 @@
+/Users/jin/PycharmProjects/Homework/spider/venv/bin/python /Users/jin/PycharmProjects/Homework/level5/main.py
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+已下载完一张图片
+Exception ignored in: <module 'threading' from '/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py'>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 1424, in _shutdown
+    lock.acquire()
+KeyboardInterrupt:
+
+Process finished with exit code 0

@@ -1,0 +1,7 @@
+/Users/jin/PycharmProjects/Homework/level4/venv/bin/python /Users/jin/PycharmProjects/Homework/level4/main.py
+  2%|▏         | 5/253 [00:47<39:30,  9.56s/it]
+
+Process finished with exit code 0
+
+
+#为了节省每次测试时间仅循环了五次，所以只有2%

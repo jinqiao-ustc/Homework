@@ -31,6 +31,7 @@ def EulerToQuaternion(e:euler.Euler) :
 
     return q
 
+
 e = QuaternionToEuler(quater.Quaternion(67, 2, 3, 4))
 q = EulerToQuaternion(euler.Euler(math.pi/2, math.pi/3, math.pi/4))
 

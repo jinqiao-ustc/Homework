@@ -11,9 +11,10 @@ from PIL import Image, ImageFont, ImageDraw
 import numpy as np
 
 
-# 获取目标链接
+#获取目标链接
 def get_url(baseUrl, choiceId, keys):
-    findUrl = re.compile(r'<a href="(.*?)" target="_blank">')  # 目标链接匹配规则
+    #目标链接匹配规则
+    findUrl = re.compile(r'<a href="(.*?)" target="_blank">')
     if choiceId == 0:
         keysUrl = 'https://www.shicimingju.com/chaxun/zuozhe_list/' + keys
         html = get_html(keysUrl)
@@ -63,7 +64,7 @@ def get_url(baseUrl, choiceId, keys):
 
     return url
 
-# 获取网页源代码
+#获取网页源代码
 def get_html(url):
     global response
     headers = {
@@ -84,12 +85,12 @@ def get_html(url):
 
     return html
 
-# 作者模式下获取数据
+#作者模式下获取数据
 def get_data_zuozhe(html, status):
     data = ""
     bs = BeautifulSoup(html, 'html.parser')
 
-    # 第一次调用函数时，获取页面中的作者信息，之后不再获取
+    #第一次调用函数时，获取页面中的作者信息，之后不再获取
     if status:
         status = False
         intro_zuozhe = ''
@@ -100,9 +101,11 @@ def get_data_zuozhe(html, status):
         works = bs.select('div.card.about_zuozhe > div > div.aside_right > div.aside_val > a')[0].text
         data = intro_zuozhe + '\n' + '年代：' + dynasty  + '\n''收录作品：' + works + '\n' + '---\n'
 
-    titles = bs.select('div.shici_list_main > h3 > a')  # 获取诗词题
-    infos = bs.select('div.shici_list_main > div.shici_content')  # 获取诗词内容
-    # 结合bs.select和re.compile匹配下一页的链接
+    #获取诗词题
+    titles = bs.select('div.shici_list_main > h3 > a')
+    #获取诗词内容
+    infos = bs.select('div.shici_list_main > div.shici_content')
+    #结合bs.select和re.compile匹配下一页的链接
     nextUrl = bs.select('div#list_nav_part')
     findNU = re.compile(r'href="(.*?)">下一页')
     nextUrl = re.findall(findNU, str(nextUrl))
@@ -113,7 +116,7 @@ def get_data_zuozhe(html, status):
 
     return data, nextUrl, status
 
-# 标题、诗句、句首、句尾模式下获取数据
+#标题、诗句、句首、句尾模式下获取数据
 def get_data_part(html):
     bs = BeautifulSoup(html, 'html.parser')
 
@@ -136,10 +139,10 @@ def get_data_part(html):
     data = '\n' + title + '\n' + zuozhe + '\n' + content + '\n\n作品赏析：' + shangxi + '\n'
     return data
 
-# 古籍模式下获取数据
+#古籍模式下获取数据
 def get_data_book(baseUrl, html):
     bs = BeautifulSoup(html, 'html.parser')
-    # 本模式下仅获取古籍目录及链接
+    #本模式下仅获取古籍目录及链接
     mulu = bs.select('div.book-mulu > ul > li > a')
     findBU = re.compile(r'href="(.*?)">')
 
@@ -149,13 +152,13 @@ def get_data_book(baseUrl, html):
 
     return data
 
-# 成语模式下获取数据
+#成语模式下获取数据
 def get_data_chengyu(html):
     bs = BeautifulSoup(html, 'html.parser')
     chengyu = bs.select('div.card > h1')[0].text
     content = bs.select('div.card > table.chengyu-table')[0].text
     contents = content.split()
-    # 仅获取词目发音、释义、出处、近义词、反义词
+    #仅获取词目发音、释义、出处、近义词、反义词
     data = '\n' + chengyu + '\n' + contents[0] + '：' + contents[1] + '\n' +\
            contents[2] + '：' + contents[3] + ' ' + contents[4] + ' ' +\
            contents[5] + ' ' + contents[6] + '\n' + contents[7] + '：' +\
@@ -166,9 +169,10 @@ def get_data_chengyu(html):
 def change_title_to_dict(fpath):
     with open(fpath, "r", encoding='utf-8') as f:
         str = f.read()
-        stringList = list(jieba.cut(str))  # 使用jieba分词
+        #使用jieba分词
+        stringList = list(jieba.cut(str))
 
-        # 获取停用词set
+        #获取停用词set
         delWord = set()
         with open('cn_stopwords.txt', "r", encoding='utf-8') as f:
             lines = f.readlines()
@@ -176,17 +180,17 @@ def change_title_to_dict(fpath):
                 delWord.add(line.strip('\n'))
         delWord.update({'\n', '\t', ' '})
 
-        # 删除诗词中的停用词
+        #删除诗词中的停用词
         stringSet = set(stringList) - delWord
         title_dict = {}
 
-        # 对各个词计数
+        #对各个词计数
         for i in stringSet:
             title_dict[i] = stringList.count(i)
 
     return title_dict
 
-# 生成作者姓名对应的图片
+#生成作者姓名对应的图片
 def name_to_img(dirs, keys):
     im = Image.new("RGB", (len(keys) * 1000, 1150), (255, 255, 255))
     dr = ImageDraw.Draw(im)
@@ -195,7 +199,7 @@ def name_to_img(dirs, keys):
     dr.text((0, 0), keys, font=font, fill="#000000")
     im.save(os.path.join(dirs, 'name.png'))
 
-# 生成词云图
+#生成词云图
 def dict_to_cloud(title_dict, dirs, keys):
     name_to_img(dirs, keys)
     font_path = r'/System/Library/Fonts/PingFang.ttc'
